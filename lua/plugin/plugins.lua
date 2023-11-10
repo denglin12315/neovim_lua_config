@@ -30,26 +30,19 @@ function(use)
 	use({ "williamboman/mason-lspconfig.nvim" })
 	-- LSP-client
 	use({ "neovim/nvim-lspconfig" })
+	use("folke/neodev.nvim")
 
 	-- 补全引擎
 	use("hrsh7th/nvim-cmp")
-	-- Snippet 引擎
-	use("L3MON4D3/LuaSnip")
-	use("saadparwaiz1/cmp_luasnip")
-	-- 补全源
+	-- vscode snippets补全功能实现插件
 	use("hrsh7th/cmp-vsnip")
+	use("hrsh7th/vim-vsnip")
+	-- 补全类型
 	use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
 	use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
 	use("hrsh7th/cmp-path") -- { name = 'path' }
 	use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
 	use("hrsh7th/cmp-nvim-lsp-signature-help") -- { name = 'nvim_lsp_signature_help' }
-
-	-- Lua 增强
-	use("folke/neodev.nvim")
-	-- JSON 增强
-	use("b0o/schemastore.nvim")
-	-- Rust 增强
-	use("simrat39/rust-tools.nvim")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
@@ -69,5 +62,6 @@ require("plugin.config.lualine")
 require("plugin.config.telescope")
 require("plugin.config.dashboard")
 require("plugin.config.project")
+require("plugin.config.nvim-cmp")
 
 

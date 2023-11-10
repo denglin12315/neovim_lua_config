@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -113,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
     loaded = true,
@@ -189,16 +179,6 @@ _G.packer_plugins = {
     path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
-  ["rust-tools.nvim"] = {
-    loaded = true,
-    path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
-    url = "https://github.com/simrat39/rust-tools.nvim"
-  },
-  ["schemastore.nvim"] = {
-    loaded = true,
-    path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
-    url = "https://github.com/b0o/schemastore.nvim"
-  },
   ["telescope-env.nvim"] = {
     loaded = true,
     path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
@@ -213,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/ldeng/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
