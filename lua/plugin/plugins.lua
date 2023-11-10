@@ -43,6 +43,9 @@ function(use)
 	use("hrsh7th/cmp-path") -- { name = 'path' }
 	use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
 	use("hrsh7th/cmp-nvim-lsp-signature-help") -- { name = 'nvim_lsp_signature_help' }
+
+	-- toggleterm
+	use("akinsho/toggleterm.nvim")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
@@ -63,5 +66,6 @@ require("plugin.config.telescope")
 require("plugin.config.dashboard")
 require("plugin.config.project")
 require("plugin.config.nvim-cmp")
+require("plugin.config.toggleterm")
 
 
